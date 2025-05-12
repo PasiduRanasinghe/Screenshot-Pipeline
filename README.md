@@ -21,8 +21,8 @@ A modern Vite + React website with automated screenshot documentation. The repos
 
 ### Prerequisites
 
-- Node.js ≥18.x
-- npm ≥9.x
+- Node.js ≥ 18.x
+- npm ≥ 9.x
 
 ### Installation
 
@@ -57,8 +57,7 @@ This project automatically:
 The screenshot above shows the latest production version. Click the image to visit the live site.
 
 ## 🌐 Deployment
-
-Automatically deployed to {{ hosting-service }} via GitHub Actions.  
+  
 Production URL: [https://PasiduRanasinghe.github.io/Screenshot-Pipeline](https://PasiduRanasinghe.github.io/Screenshot-Pipeline)
 
 ## 🤝 Contributing
