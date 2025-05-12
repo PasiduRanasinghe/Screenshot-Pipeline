@@ -1,1 +1,36 @@
 name: Screenshot-Update
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - uses: actions/setup-node@4
+        with:
+          node-version: 18
+
+      - name: install dependencies
+        run: npm ci
+
+      - name: install Puppeteer dependencies
+        run: |
+          npm i puppeteer
+          sudo apt-get update
+          sudo apt-get install -y libgbm-dev
+
+      - name: Run the update screenshot script
+        run: node update-screenshot.js
+
+      - name: Commit screenshot.png to repository
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add screenshot.png
+          git commit -m "Update screenshot from workflow" || echo "No changes"
+          git push
