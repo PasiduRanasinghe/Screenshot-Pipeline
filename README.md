@@ -4,7 +4,7 @@
 [![GitHub Actions Status](https://github.com/PasiduRanasinghe/Screenshot-Pipeline/actions/workflows/screenshot-update.yml/badge.svg)](https://github.com/PasiduRanasinghe/Screenshot-Pipeline/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Website Screenshot](website-screenshot.png)](https://{{your-website-url}.com)
+[![Website Screenshot](screenshot.png)](https://PasiduRanasinghe.github.io/Screenshot-Pipeline)
 
 A modern Vite + React website with automated screenshot documentation. The repository automatically captures and updates the README preview image on every push to main.
 
@@ -59,7 +59,7 @@ The screenshot above shows the latest production version. Click the image to vis
 ## 🌐 Deployment
 
 Automatically deployed to {{ hosting-service }} via GitHub Actions.  
-Production URL: [https://{{your-website-url}.com](https://{{your-website-url}.com)
+Production URL: [https://PasiduRanasinghe.github.io/Screenshot-Pipeline](https://PasiduRanasinghe.github.io/Screenshot-Pipeline)
 
 ## 🤝 Contributing
 
@@ -72,10 +72,3 @@ Production URL: [https://{{your-website-url}.com](https://{{your-website-url}.co
 ## 📄 License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for details.
-
----
-
-*Screenshot last updated: {{date}}*  
-*This README is automatically maintained by GitHub Actions 🤖*
-
-
