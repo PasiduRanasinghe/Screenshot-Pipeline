@@ -22,10 +22,10 @@ jobs:
         run: |
           npm i puppeteer
           sudo apt-get update
-          sudo apt-get install -y libgbm-dev
+          sudo apt-get install -y libgbm-dev libxshmfence-dev
 
       - name: Run the update screenshot script
-        run: node update-screenshot.js
+        run: PUPPETEER_EXECUTABLE_PATH=$(which google-chrome) node update-screenshot.js
 
       - name: Commit screenshot.png to repository
         run: |
