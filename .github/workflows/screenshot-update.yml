@@ -22,12 +22,14 @@ jobs:
 
       - name: install Puppeteer dependencies
         run: |
-          npm i puppeteer
+          npm i puppeteer-core
           sudo apt-get update
-          sudo apt-get install -y libgbm-dev libxshmfence-dev
+          sudo apt-get install -y google-chrome-stable
 
       - name: Run the update screenshot script
-        run: PUPPETEER_EXECUTABLE_PATH=$(which google-chrome) node update-screenshot.js
+        run: node update-screenshot.js
+        env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/google-chrome
 
       - name: Commit screenshot.png to repository
         run: |
