@@ -57,7 +57,8 @@ This project automatically:
 The screenshot above shows the latest production version. Click the image to visit the live site.
 
 ## 🌐 Deployment
-  
+
+Automatically deployed to GitHub Pages via GitHub Actions.
 Production URL: [https://PasiduRanasinghe.github.io/Screenshot-Pipeline](https://PasiduRanasinghe.github.io/Screenshot-Pipeline)
 
 ## 🤝 Contributing
